@@ -1,0 +1,15 @@
+# Data and caches are not published
+data/
+*.sqlite
+*.parquet
+*.log
+token_dunkest.txt
+.dunkest_token
+.env
+__pycache__/
+.venv/
+venv/
+.claude/
+demo/
+*.mp4
+!media/*.mp4

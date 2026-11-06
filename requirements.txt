@@ -1,0 +1,11 @@
+# Python 3.12
+numpy
+pandas
+pyarrow          # parquet files
+scipy            # integer linear programming (HiGHS) for the lineup optimizer
+statsmodels
+lightgbm
+fastapi
+uvicorn
+pydantic
+# R (optional, scripts/stat_glmm.R): glmmTMB, data.table, arrow

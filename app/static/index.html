@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dunkest – Confronto squadre</title>
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+  <header class="topbar">
+    <h1><span class="logo" aria-hidden="true">D</span>Dunkest <span class="sub">confronto squadre</span></h1>
+    <nav class="pages" id="pages">
+      <button data-page="compare" class="active">Confronto</button>
+      <button data-page="list">Elenco giocatori</button>
+    </nav>
+    <label class="md-pick">Giornata <select id="matchday"></select></label>
+    <span id="data-status" class="muted small"></span>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <main id="page-list" hidden></main>
+
+  <main id="page-compare">
+    <section id="result" class="result"></section>
+    <nav class="tabs" id="tabs">
+      <button data-tab="0" class="team-a">A</button>
+      <button data-tab="1" class="team-b">B</button>
+    </nav>
+    <div class="teams">
+      <section class="team team-a" id="team-0"></section>
+      <section class="team team-b" id="team-1"></section>
+    </div>
+  </main>
+
+  <dialog id="player-modal"><div id="modal-body"></div></dialog>
+  <div id="tooltip" class="tooltip" popover="manual" hidden></div>
+
+  <script src="app.js?v=5"></script>
+</body>
+</html>
